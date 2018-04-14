@@ -1,0 +1,139 @@
+$lt-gray: #ddd;
+$background-dark: #233237;
+$background-light: #984B43;
+$background-pale: #EAC67A;
+$brand: $background-pale;
+
+$row-height: 200px;
+$carousel-item-height: 200px;
+
+@mixin zero-margin($pad-up-dn, $pad-left-right){
+    margin: 0px auto;
+    padding: $pad-up-dn $pad-left-right;
+}
+
+body{
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+header{
+    @include zero-margin(20px, 20px);
+    background-color: $background-light;
+    color: floralwhite;
+}
+.navbar-inverse{
+    background-color: $background-dark;
+}
+.row-content{
+    @include zero-margin(20px, 0px);
+    border-bottom: 1px ridge;
+}
+.footer{
+    background-color: $background-pale;
+    @include zero-margin(20px, 0px);
+}
+#copyright{
+    color: floralwhite;
+    background-color: $background-dark;
+    margin-top: 10px;
+    line-height: 1.8em;
+    height: 2em;
+}
+
+address{
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+.tab-content{
+    border-left: 1px solid $lt-gray;
+    border-right: 1px solid $lt-gray;
+    border-bottom: 1px solid $lt-gray;
+    padding: 10px;
+}
+
+.carousel{
+    background: $background-dark;
+
+    .carousel-item{
+        height: $carousel-item-height;
+        img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: $carousel-item-height;
+        }
+        .carousel-caption{
+            left: $carousel-item-height;
+            padding-left: 20px;
+        }
+    }
+    .carousel-indicators > li{
+        left: 90px;
+        bottom: -15px;
+        height: 10px;
+        border-radius: 50%;
+    }
+}
+#carouselButtons{
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.modal-header{
+    color: floralwhite;
+    background: $background-dark;    
+
+    button{
+        color: floralwhite;
+    }
+}
+.modal-body{
+    background: $background-pale;    
+}
+.modal-footer{
+    background: $background-light;
+}
+
+img#logo {
+    width: 30px;
+    height: 30px;
+}
+a#btnLogin:hover {
+    cursor: pointer;
+    color: floralwhite;
+}
+a.collapsed {
+    color: floralwhite;
+}
+span.brand {
+    color: $brand;
+    font-weight: bold;
+}
+.badge {
+    font-size: 0.4em;
+}
+img.img-thumbnail {
+    max-width: 125px;
+    max-height: 125px;
+}
+.card-header {
+    background-color: $background-light;
+}
+.thead-dark {
+    background-color: $background-light;    
+}
+td {
+    text-align: right;
+}
+thead {
+    th {
+        text-align: right;
+    }
+}
+button {
+    cursor: pointer;
+}

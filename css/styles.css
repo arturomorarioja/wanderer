@@ -1,0 +1,141 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+header {
+  margin: 0px auto;
+  padding: 20px 20px;
+  background-color: #984B43;
+  color: floralwhite;
+}
+
+.navbar-inverse {
+  background-color: #233237;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 20px 0px;
+  border-bottom: 1px ridge;
+}
+
+.footer {
+  background-color: #EAC67A;
+  margin: 0px auto;
+  padding: 20px 0px;
+}
+
+#copyright {
+  color: floralwhite;
+  background-color: #233237;
+  margin-top: 10px;
+  line-height: 1.8em;
+  height: 2em;
+}
+
+address {
+  font-size: 80%;
+  margin: 0px;
+  color: #0f0f0f;
+}
+
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+.carousel {
+  background: #233237;
+}
+.carousel .carousel-item {
+  height: 200px;
+}
+.carousel .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 200px;
+}
+.carousel .carousel-item .carousel-caption {
+  left: 200px;
+  padding-left: 20px;
+}
+.carousel .carousel-indicators > li {
+  left: 90px;
+  bottom: -15px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+#carouselButtons {
+  right: 0px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.modal-header {
+  color: floralwhite;
+  background: #233237;
+}
+.modal-header button {
+  color: floralwhite;
+}
+
+.modal-body {
+  background: #EAC67A;
+}
+
+.modal-footer {
+  background: #984B43;
+}
+
+img#logo {
+  width: 30px;
+  height: 30px;
+}
+
+a#btnLogin:hover {
+  cursor: pointer;
+  color: floralwhite;
+}
+
+a.collapsed {
+  color: floralwhite;
+}
+
+span.brand {
+  color: #EAC67A;
+  font-weight: bold;
+}
+
+.badge {
+  font-size: 0.4em;
+}
+
+img.img-thumbnail {
+  max-width: 125px;
+  max-height: 125px;
+}
+
+.card-header {
+  background-color: #984B43;
+}
+
+.thead-dark {
+  background-color: #984B43;
+}
+
+td {
+  text-align: right;
+}
+
+thead th {
+  text-align: right;
+}
+
+button {
+  cursor: pointer;
+}

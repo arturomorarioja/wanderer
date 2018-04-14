@@ -1,0 +1,16 @@
+{
+  "name": "wanderer",
+  "version": "1.0.0",
+  "description": "Wanderer Travel Guides",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arturo Mora-Rioja",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "npm": "^5.8.0"
+  }
+}

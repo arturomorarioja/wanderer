@@ -1,0 +1,90 @@
+<nav class="navbar navbar-inverse navbar-toggleable-sm fixed-top">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" id="logo" /></a>
+        <div class="collapse navbar-collapse" id="Navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="mnuIndex"><a class="nav-link" href="index.html">
+                    <span class="fa fa-home fa-lg"></span> Home</a></li>
+                <li class="nav-item" id="mnuAboutUs"><a class="nav-link" href="aboutus.html">
+                    <span class="fa fa-info fa-lg"></span> About</a></li>
+                <li class="nav-item" id="mnuContactUs"><a class="nav-link" href="contactus.html">
+                    <span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+            </ul>
+            <span class="navbar-text">
+                <a id="btnLogin">
+                    <span class="fa fa-sign-in"></span> Login
+                </a>
+            </span>
+        </div>
+    </div>
+</nav>
+<div id="loginModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Login </h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="txtEmail">Email address</label>
+                        <input type="email" class="form-control form-control-sm mr-1" 
+                            id="txtEmail" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="txtPassword">Password</label>
+                        <input type="password" class="form-control form-control-sm mr-1" 
+                            id="txtPassword" placeholder="Password">
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">
+                            Remember me
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-warning btn-sm" 
+                    onclick="alert('Action not implemented')">Sign in</button>
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header>
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-8">
+                <h1><span class="brand">Wanderer</span> Travel Guides</h1>
+                <p>No matter where you go, make sure that you always carry with you a
+                    <span class="brand">Wanderer</span> travel guide, the most comprehensive 
+                    aid to get the best out of your holiday destination.</p>
+            </div>                
+            <div class="col-12 col-sm-4 align-self-center text-center">
+                <img src="img/logo.png" class="img-fluid" />
+            </div>
+        </div>
+    </div>
+</header>
+
+<script>
+    $(document).ready(function(){
+        // Based on which is the active page, the corresponding menu item becomes active
+        switch($("#page").text()){
+            case "Index":       $("#mnuIndex").attr("class", "nav-item active"); break;
+            case "About Us":    $("#mnuAboutUs").attr("class", "nav-item active"); break;
+            case "Contact Us":  $("#mnuContactUs").attr("class", "nav-item active"); break;
+        }
+
+        // The login modal is loaded
+        $("#btnLogin").click(function(){
+            $("#loginModal").modal();
+        });
+    });
+</script>
