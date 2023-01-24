@@ -3,6 +3,8 @@ $background-dark: #233237;
 $background-light: #984B43;
 $background-pale: #EAC67A;
 $brand: $background-pale;
+$text-primary: #0f0f0f;
+$text-secondary: floralwhite;
 
 $row-height: 200px;
 $carousel-item-height: 200px;
@@ -20,7 +22,7 @@ body{
 header{
     @include zero-margin(20px, 20px);
     background-color: $background-light;
-    color: floralwhite;
+    color: $text-secondary;
 }
 .navbar-inverse{
     background-color: $background-dark;
@@ -34,7 +36,7 @@ header{
     @include zero-margin(20px, 0px);
 }
 #copyright{
-    color: floralwhite;
+    color: $text-secondary;
     background-color: $background-dark;
     margin-top: 10px;
     line-height: 1.8em;
@@ -44,7 +46,7 @@ header{
 address{
     font-size: 80%;
     margin: 0px;
-    color: #0f0f0f;
+    color: $text-primary;
 }
 
 .tab-content{
@@ -84,11 +86,11 @@ address{
 }
 
 .modal-header{
-    color: floralwhite;
+    color: $text-secondary;
     background: $background-dark;    
 
     button{
-        color: floralwhite;
+        color: $text-secondary;
     }
 }
 .modal-body{
@@ -104,10 +106,10 @@ img#logo {
 }
 a#btnLogin:hover {
     cursor: pointer;
-    color: floralwhite;
+    color: $text-secondary;
 }
 a.collapsed {
-    color: floralwhite;
+    color: $text-secondary;
 }
 span.brand {
     color: $brand;
