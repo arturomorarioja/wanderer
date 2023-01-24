@@ -1,5 +1,9 @@
+.vscode
+css/styles.css.map
 node_modules
 resources
 wanderer.code-workspace
 img/logo.psp
 img/pspbrwse.jbf
+package-lock.json
+package.json

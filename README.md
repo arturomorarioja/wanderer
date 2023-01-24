@@ -14,5 +14,8 @@ This is a sample of Front-End development: a responsive web site promoting a col
 ## Acknowledgements
 This sample is based on the final project of the course *Front-End Web UI Frameworks and Tools: Bootstrap 4* (The Hong Kong University of Science and Technology via coursera.org)
 
+## Installation
+Run `npm init` and `npm install`
+
 ## Tools
-HTML5 / Scss / Bootstrap 4 / JavaScript / jQuery
+HTML5 / Sass / Bootstrap 4 / JavaScript / jQuery
